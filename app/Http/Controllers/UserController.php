@@ -23,7 +23,6 @@ class UserController extends Controller
     public function index(): View
     {
         $users = $this->service->listUsers(25);
-
         return view('users.index', compact('users'));
     }
 

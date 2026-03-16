@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
-    {!! Devrabiul\ToastMagic\Facades\ToastMagic::styles() !!}
+    {!! ToastMagic::styles() !!}
     <style>
         :root {
             --bg: #f4f6fb;
@@ -183,7 +183,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    {!! Devrabiul\ToastMagic\Facades\ToastMagic::scripts() !!}
+    {!! ToastMagic::scripts() !!}
     @stack('scripts')
 </body>
 

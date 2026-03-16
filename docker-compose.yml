@@ -45,6 +45,20 @@ services:
     networks:
       - laravel
 
+  horizon:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    container_name: laravel_horizon
+    command: php artisan horizon
+    volumes:
+      - .:/var/www
+    depends_on:
+      - redis
+      - mysql
+    networks:
+      - laravel
+
   node:
     image: node:20
     working_dir: /var/www

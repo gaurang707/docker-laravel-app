@@ -45,6 +45,8 @@ class UserController extends Controller
             ToastMagic::error('Create failed', $exception->getMessage());
 
             return back()->withInput();
+
+            
         }
     }
 
